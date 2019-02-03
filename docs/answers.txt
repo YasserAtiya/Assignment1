@@ -1,0 +1,60 @@
+a)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 319 bytes | 106.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/YasserAtiya/Assignment1
+   b2d8068..6c484fa  master -> master
+
+b)
+ git rev-list --all --count
+10
+
+c)
+Sep 15, 2016
+
+$ git log .gitignore
+commit 2f6863fcae58352d7fa1674ae373bbc9e6cbedf1
+Author: Javier <Javier@RicardoLaptop>
+Date:   Thu Sep 15 10:29:34 2016 -0400
+
+    Git ignore was changed. Some local files should not be included in the
+    remote.
+
+commit 871bf6a4d6a7f525aeca876e2ab445390633c130
+Author: Javier <Javier@RicardoLaptop>
+Date:   Thu Sep 15 10:27:32 2016 -0400
+
+    Role game for Git Assignment.
+
+    This framework inclused the interdace Sword, the RoleGame class with
+    a partial implementation of the game, and one weapon: Sword.
+
+d)
+Branches are good for versioning, and experimenting with updates and fixes.
+
+e)
+git log shows commit histories for the current branch, while git status shows modified files in working directory, and whether or not hey are part of the next commit.
+
+f)
+git log Weapon.java
+
+g)
+git log --grep=file
+
+h)
+	I) Inheritance is the concept of allowing features and properties to be passed on from existing objects to new objects.
+	II) The ability for an object to represent multiple different types.
+	III) Restricting direct access to some of an object's properties, and bundling data with methods their data.
+
+i)
+Each developer has write access to their own public repository and read access to everyone else’s, they change their own local repositories, then send their changes to their integration manager to merge the changes and integrate them to an offical repository. This works for a small team. While dictator and liutenants works for larger teams.  It uses various integration managers in charge of certain parts of the repository (lieutenants). Liuteneants report to their own integration manager known as the benevolent dictator.
+
+j)
+Dictator and liutenants is more geared for large teams.  If using a Centralized workflow, each developer's changes to the master branch could cause problems, or interact poorly causing problems.  With a dictator, and liutenants, they would be able to have these changes tested and merged responsibly by someone before the master repository was changed.
+
+
