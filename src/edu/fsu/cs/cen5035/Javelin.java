@@ -1,12 +1,12 @@
 package edu.fsu.cs.cen5035;
 
 /**
- * @author Javier
+ * @author Yasser
  */
-public class Spear extends BasicWeapon implements Weapon {
+public class Javelin extends BasicWeapon implements Weapon {
 
-    public Spear() {
-        super(40);
+    public Javelin() {
+        super(30);
     }
 
     @Override
@@ -16,7 +16,7 @@ public class Spear extends BasicWeapon implements Weapon {
 
     @Override
     public int hit(int armor) {
-        int damage = DAMAGE - (int) (0.8 * armor);
+        int damage = DAMAGE - (int) (0.5 * armor);
         if (damage < 0) {
             return 0;
         }
