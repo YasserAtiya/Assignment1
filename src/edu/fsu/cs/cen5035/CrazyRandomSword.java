@@ -7,9 +7,7 @@ import java.util.Random;
 public class CrazyRandomSword extends BasicWeapon implements Weapon {
 
     public CrazyRandomSword() {
-	Random rand = new Random();
-	int random = rand.nextInt(96);
-	super(random+3);
+	super((int)Math.max(Math.random()*100,3));
     }
 
 
@@ -21,7 +19,7 @@ public class CrazyRandomSword extends BasicWeapon implements Weapon {
     @Override
     public int hit(int armor) {
 	Random rand = new Random();
-	int random = rand.nextInt((armor/3)-2);
+	int random = rand.nextInt((int)(armor/3)-2);
         int damage = DAMAGE - random + 2;
         if (damage < 0) {
             return 0;
